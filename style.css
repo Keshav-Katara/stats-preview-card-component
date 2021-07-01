@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 1.5rem;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 110rem;
+  height: 45rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box1 {
+  background-color: hsl(244, 38%, 16%);
+  flex-basis: 50%;
+  padding-left: 5rem;
+  padding-top: 6rem;
+  padding-right: 8rem;
+}
+
+.box2 {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.box2__img {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.com1 {
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.com2 {
+  margin-top: 4rem;
+  text-align: left;
+  padding-right: 10rem;
+  font-weight: 400;
+}
+
+.para {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.com3 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 13rem;
+  margin-top: 8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.top {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+}
+
+.bottom {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding-top: 0.5rem;
+}
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+@media screen and (max-width: 1110px) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    flex-direction: column;
+    width: 35rem;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  .box2 {
+    order: -1;
+    height: 30%;
+  }
+
+  .box1 {
+    padding: 2rem;
+  }
+
+  .com1 {
+    font-size: 3rem;
+  }
+
+  .com2 {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .para {
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+
+  .com3 {
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 0;
+    height: 20rem;
+  }
+  .top {
+    font-size: 2.5rem;
+  }
+  .bottom {
+    font-size: 1.5rem;
+  }
+}
